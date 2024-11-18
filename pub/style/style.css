@@ -1,7 +1,123 @@
-body { background-color: grey; }
+html { overflow-y: scroll; }
 
-a { color: blue; font-size: 30px; text-decoration: none; }
+body { background-color: grey; font-family: verdana, helvetica, arial, sans-serif; color: black; width: 75em; margin: 5px auto;}
 
-a:hover { background-color: #eeee9e; }
+pre, code { margin: 0; }
 
-#box { font-family: verdana, helvetica, arial, sans-serif; color: #333335; background-color: #ffffd7; border: 8px solid #aaffff; }
+a { color: blue; text-decoration: none; }
+
+#sidebar a:hover { text-decoration: none; color: purple; background-color: white; }
+
+#header { clear: both; color: black; overflow: hidden; background-color: white; height: 1.6em }
+
+#header a { color: blue; background-color: transparent; text-decoration: none; font-size: 20px; margin: 0; padding: 0 0.5ex 0 0.25ex; }
+
+#header a:hover { text-decoration: none; color: purple; background-color: white; }
+
+#sidebar {
+	float: left;
+	margin: 0 1px 0 0;
+	padding: 1em 0;
+	border-right: 1px dotted #ccc;
+	width: 200px;
+	background-color: white; 
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#sidebar li ul {
+	padding-left: 0.6em;
+}
+
+#sidebar li a {
+	display: block;
+	margin: 0;
+	padding: 0.8ex 2em 0.8ex 1em;
+}
+
+#main {
+	margin: 0 0 0 200px;
+	max-width: 75em;
+	padding: 1.5em;
+	color: black;
+	background-color: #ffffd7; 
+	border: 6px solid #aaffff; 
+}
+
+.left {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.right {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.headerTitle {
+  color: black;
+  font-family: klavika, verdana, helvetica, arial, sans-serif;
+  font-size: 233%;
+  font-weight: bold;
+  margin: 0 0 0 4mm;
+}
+
+#headerSubTitle {
+  font-size: 50%;
+  font-style: italic;
+  margin-left: 1em;
+}
+
+.headerTitle a {
+  color: blue;
+  text-decoration: none;
+}
+.headerTitle a:hover {
+  color: purple;
+  background-color: white;
+  text-decoration: none;
+}
+
+.superHeader .highlight, .subHeader .highlight {
+  color: black;
+  background-color: transparent;
+}
+.bottomHeader {
+  color: black;
+  background-color: white;
+  border: solid 0 white;
+  border-width: 1px 0 0;
+}
+
+.subHeader {
+  display: none;
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 1ex 1ex 1ex 1.5mm;
+}
+
+.subHeader a {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0.75ex 0 0.5ex;
+}  
+.subHeader a:hover {
+  color: purple;
+  background-color: white;
+  text-decoration: none;
+}
